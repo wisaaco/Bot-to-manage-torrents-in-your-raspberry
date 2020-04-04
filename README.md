@@ -1,5 +1,4 @@
 # Telegram Bot to manage torrents in your raspberry
-Steps to create a Telegram bot for torrent managing in your raspberry and install a streaming server for your TV.
 
 This repository contains the instructions to create a simple bot that manages torrents. It is intended to be deployed on a raspberry and in turn, a streaming server can be installed to play content in your smart TV.
 
