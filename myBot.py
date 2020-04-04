@@ -88,6 +88,7 @@ def tail(f, lines=1, _buffer=4098):
         block_counter -= 1
     return lines_found[-lines:]
 
+@restricted
 def estado_handler(bot,update,args):
     update.message.reply_text("State: "+str(args[0])) 
     filelog = open('logs/estado.log', 'r')
@@ -103,7 +104,7 @@ def estado_handler(bot,update,args):
             texto = texto + l + "\n"
     return update.message.reply_text(texto)
     
-
+@restricted
 def completado_handler(bot,update,args):
     update.message.reply_text("Completed: "+str(args[0])) 
     filelog = open('logs/completados.log', 'r')
@@ -119,7 +120,7 @@ def completado_handler(bot,update,args):
             texto = texto + l + "\n"
     return update.message.reply_text(texto)
 
-
+@restricted
 def removefiles(bot,update,args):
     mypath = "/media/HardDrive/"
     
